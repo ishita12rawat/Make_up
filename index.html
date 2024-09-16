@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+    header{
+        background-image: url('https://www.shutterstock.com/image-vector/vector-illustration-makeup-products-cosmetic-260nw-2458569963.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 20vh;
+
+    }
+
+    .nav {
+        display: flex;
+        list-style-type: none;
+        padding-left: 0;
+        justify-content: flex-end;
+        margin: 0;
+    }
+
+    /* List items styling */
+    li {
+        align-items: center;
+        padding: 20px;
+        font-size: 2em;
+    }
+
+    /* Styling for links */
+    .nav-link {
+        text-decoration: none;
+        color: #000; /* Set text color */
+    }
+
+    .nav-link:hover {
+        color: #ff4500; /* Change color on hover */
+    }
+
+
+    @media only screen and (max-width: 768px) {
+    .image img {
+        max-width: 45%; /* Adjust image size for tablets and small desktops */
+    }
+}
+@media only screen and (max-width:455px){
+    header {
+
+
+
+        background-size: cover;
+            height: 30vh;
+        }
+
+        /* Stack the navigation items vertically */
+        .nav {
+            flex-direction: column;
+            padding-left: 0;
+        }
+
+        li {
+            width: 100%; /* Make list items full width */
+            text-align: center;
+            padding: 10px; /* Reduce padding for smaller screens */
+        }
+
+        .nav-link {
+            font-size: 0.5em; /* Adjust font size */
+        }
+
+
+        img {
+            width: 50%; /* Image takes full width on smaller screens */
+            height: auto; /* Maintain aspect ratio */
+            float: none; /* Remove floating on small screens */
+        }
+      p{
+        padding-left: 0px;
+     font-size: 1.2em;
+
+padding-top: 10px;
+      }
+  
+      .image img {
+        max-width: 100%; /* Make images full width on small screens */
+        margin-bottom: 5px; /* Add spacing between rows of images */
+
+    }
+
+   
+       
+}
+
+.hero {
+      display: flex;
+      justify-content: space-between;  
+        background-color: rgb(195, 234, 221);
+    }
+
+    img {
+        max-width: 50%; /* Image scales with container */
+        height: auto; /* Maintain aspect ratio */
+      padding-right: 1%;
+        float: right;
+    }
+
+    
+    p{
+      padding-left: 10%;
+      font-family: "Fascinate Inline", system-ui;
+font-size: 3em;
+
+padding-top: 60%;
+    }
+/* .hero{
+    height: 800%;
+  text-align: center;
+}
+img{
+  height: 300%;
+  width: auto;
+padding-right: 20px;
+float: right;
+} */
+ .image{
+    display: flex;
+
+    justify-content: space-around;
+    flex-wrap: wrap;
+ }
+ .image img {
+    padding: 10px;
+    max-width: 20%; /* Set max width for images */
+    width: 50%; /* Images take 100% width of their container */
+    height: auto; /* Maintain aspect ratio */
+}
+.items{
+    background-color: rgb(39, 86, 70);
+   
+}
+
+
+#imagee{
+    width: 50%;
+    height: auto;
+}
+
+</style>
+<body>
+  
+<header>
+    <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#Home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Products">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Contact">Contact</a>
+        </li>
+       
+      </ul>
+    </header>
+<div class="hero" id="Home">
+<div>
+<p> Welcome  To  MakeUp Site</p>
+
+</div>
+<img src="https://i.pinimg.com/736x/89/73/56/897356d43b28e71965a0636943bc1c1d.jpg" alt="">
+
+</div>
+
+
+<section class="items" id="Products">
+    <div class="image">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4W9QHWFiPTMMmhem0MryU4x6OoMri1dozPw&s" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTycn57ay_LHkZQrkDluh9EozPxvj6y0FRvDw&s" alt="">
+        <img src="https://media.istockphoto.com/id/687244776/photo/makeup-artist-applying-eyeshadow-on-a-girl.webp?a=1&b=1&s=612x612&w=0&k=20&c=qx-0HpXbnjOdxOOkXYt2_mqatX7PjQ0gsJV0XsLfPsg=" alt="">
+        <img src="https://plus.unsplash.com/premium_photo-1677526496597-aa0f49053ce2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWFrZXVwJTIwcHJvZHVjdHN8ZW58MHx8MHx8fDA%3D" alt="">
+        <img src="https://images.unsplash.com/photo-1631214504157-ee93581cefde?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG1ha2V1cCUyMHByb2R1Y3RzfGVufDB8fDB8fHww" alt="">
+        <img src="https://images.unsplash.com/photo-1611605472181-7962c1c85ed5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGlwc3RpY2t8ZW58MHx8MHx8fDA%3D" alt="">
+        <img src="https://images.unsplash.com/photo-1598452963314-b09f397a5c48?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGxpcHN0aWNrfGVufDB8fDB8fHww" alt="">
+        <img src="https://images.unsplash.com/photo-1617422275563-4cf1103e7d60?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGxpcHN0aWNrfGVufDB8fDB8fHww" alt="">
+    </div>
+</section>
+
+<section class="product"></section>
+    <div class="into">
+        Collab Brands 
+        <button>  dior</button>
+
+       <button> almay</button>
+      <button>burt's bees</button>  
+      <button> butter london</button> 
+      <button>  covergirl</button>
+       <button> e.l.f.</button>
+    <button>   l'oreal</button> 
+      <button>lotus cosmetics usa</button>  
+      <button>   maybelline</button>
+      
+    </div>
+<div class="formm">
+    <form id="searchForm">
+        <input type="text" id="search" placeholder="Search makeup brand or product type">
+        <button type="submit" id="searchButton">Search</button>
+        <div>
+            <h1 id="brand"></h1>
+            <h1 id="namee"></h1>
+            <h2 id="price"></h2>
+            <img src="" id="imagee" alt="">
+        </div>
+    </form>
+    
+    </div>
+</section>
+
+
+
+
+
+
+<script src="script/script.js"></script>
+</body>
+</html>

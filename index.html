@@ -7,8 +7,26 @@
     
 
 </head>
+
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "itvtjrXjEi2SBZCDI",
+      });
+   })();
+</script>
+
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
     header{
         background-image: url('https://www.shutterstock.com/image-vector/vector-illustration-makeup-products-cosmetic-260nw-2458569963.jpg');
         background-size: 100% 100%;
@@ -79,7 +97,7 @@
             height: auto; /* Maintain aspect ratio */
             float: none; /* Remove floating on small screens */
         }
-      p{
+      .paraa{
         padding-left: 0px;
      font-size: 1.2em;
 
@@ -92,8 +110,35 @@ padding-top: 10px;
 
     }
 
-   
-       
+
+  
+
+    #search, #searchButton {
+                width: 100%;
+                font-size: 14px;
+            }
+
+            #resultsContainer {
+                justify-content: center;
+            }
+
+            .product {
+                width: 100%;
+                max-width: 320px;
+                padding: 15px;
+            }
+
+            .product img {
+                max-width: 100%;
+                height: auto;
+            }
+  
+            .para{
+    text-align: center;
+margin-left: 10%;
+margin-right: 10%;
+}
+     
 }
 
 .hero {
@@ -102,7 +147,7 @@ padding-top: 10px;
         background-color: rgb(195, 234, 221);
     }
 
-    img {
+    .pic {
         max-width: 50%; /* Image scales with container */
         height: auto; /* Maintain aspect ratio */
       padding-right: 1%;
@@ -110,7 +155,7 @@ padding-top: 10px;
     }
 
     
-    p{
+    .paraa{
       padding-left: 10%;
       font-family: "Fascinate Inline", system-ui;
 font-size: 3em;
@@ -134,13 +179,14 @@ float: right;
     flex-wrap: wrap;
  }
  .image img {
+    border-radius: 20%;
     padding: 10px;
     max-width: 20%; /* Set max width for images */
     width: 50%; /* Images take 100% width of their container */
     height: auto; /* Maintain aspect ratio */
 }
 .items{
-    background-color: rgb(39, 86, 70);
+    background-color: rgb(197, 225, 216);
    
 }
 
@@ -150,6 +196,121 @@ float: right;
     height: auto;
 }
 
+
+#search {
+            padding: 10px;
+            font-size: 16px;
+         margin-left: 50;
+         
+         text-align: center;
+        }
+
+        #searchButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        #searchButton:hover {
+            background-color: #0056b3;
+        }
+
+        /* Flexbox container for results */
+        #resultsContainer {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        /* Individual product styling */
+        .product {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            width: 200px;
+            padding: 10px;
+          
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product p {
+            margin: 5px 0;
+            text-align: center;
+        }
+.contact{
+    background-color: rgb(93, 215, 174);
+    align-items: center;
+    border: 2px solid red;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+   
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.foot{
+  
+    text-align: center;
+    background-image: url('https://economictimes.indiatimes.com/thumb/msid-95656895,width-1600,height-900,resizemode-4,imgsize-118498/brush-.jpg?from=mdr');
+    background-size: 100% 100%;
+    
+    font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.para{
+
+    padding: 5%;
+    text-align: center;
+margin-left: 30%;
+margin-right: 30%;
+max-width: 100%;
+}
+
+.display{
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    background-color: rgb(165, 232, 232);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+}
+
+
+
+
+
+
+
+.n{
+    text-align: center;
+    padding-top: 3%;
+    /* background-color: #f9c7e2; */
+}
+
+/* pre{
+    font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} */
 </style>
 <body>
   
@@ -169,10 +330,10 @@ float: right;
     </header>
 <div class="hero" id="Home">
 <div>
-<p> Welcome  To  MakeUp Site</p>
+<p class="paraa"> Welcome  To  MakeUp Site</p>
 
 </div>
-<img src="https://i.pinimg.com/736x/89/73/56/897356d43b28e71965a0636943bc1c1d.jpg" alt="">
+<img class="pic" src="https://i.pinimg.com/736x/89/73/56/897356d43b28e71965a0636943bc1c1d.jpg" alt="">
 
 </div>
 
@@ -180,7 +341,7 @@ float: right;
 <section class="items" id="Products">
     <div class="image">
 
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4W9QHWFiPTMMmhem0MryU4x6OoMri1dozPw&s" alt="">
+        <img class="loo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4W9QHWFiPTMMmhem0MryU4x6OoMri1dozPw&s" alt="">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTycn57ay_LHkZQrkDluh9EozPxvj6y0FRvDw&s" alt="">
         <img src="https://media.istockphoto.com/id/687244776/photo/makeup-artist-applying-eyeshadow-on-a-girl.webp?a=1&b=1&s=612x612&w=0&k=20&c=qx-0HpXbnjOdxOOkXYt2_mqatX7PjQ0gsJV0XsLfPsg=" alt="">
         <img src="https://plus.unsplash.com/premium_photo-1677526496597-aa0f49053ce2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWFrZXVwJTIwcHJvZHVjdHN8ZW58MHx8MHx8fDA%3D" alt="">
@@ -190,8 +351,8 @@ float: right;
         <img src="https://images.unsplash.com/photo-1617422275563-4cf1103e7d60?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGxpcHN0aWNrfGVufDB8fDB8fHww" alt="">
     </div>
 </section>
+<div class="display">
 
-<section class="product"></section>
     <div class="into">
         Collab Brands 
         <button>  dior</button>
@@ -206,26 +367,90 @@ float: right;
       <button>   maybelline</button>
       
     </div>
-<div class="formm">
-    <form id="searchForm">
-        <input type="text" id="search" placeholder="Search makeup brand or product type">
-        <button type="submit" id="searchButton">Search</button>
-        <div>
-            <h1 id="brand"></h1>
-            <h1 id="namee"></h1>
-            <h2 id="price"></h2>
-            <img src="" id="imagee" alt="">
-        </div>
-    </form>
-    
-    </div>
+    <div class="n">
+    <input type="text" id="search" placeholder="Enter product type ❤️" />
+    <button id="searchButton">Search</button>
+</div>
+    <div id="resultsContainer"></div>
 </section>
 
+</div>
 
+<section class="contact" id="Contact">
+    <div class="box">
+        <p >Place your order🎀</p>
+        <form id="orderForm">
+            <label for="name">Enter your name:</label>
+            <input type="text" id="name" placeholder="Name" name="name">
+            <br><br>
+        
+            <label for="subject">Enter Product name:</label>
+            <input type="text" id="subject" placeholder="Product Name" name="subject">
+            <br><br>
+        
+            <label for="quantity">Quantity:</label>
+            <input type="number" placeholder="Quantity" id="quantity" name="quantity">
+            <br><br>
+        
+            <label for="email">Enter your E-mail:</label>
+            <input type="email" placeholder="Your Email" id="email" name="email">
+            <br><br>
+        
+            <input type="submit" value="Place Order">
+        </form>
+    </div>
+</section>
+<footer>
+    <div class="foot">
+      
+       
+        <p class="para" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
 
+            Eyeliner:
+            is a popular cosmetic product used to define and accentuate the eyes. It comes in various forms
+             and colors and can be applied in different styles to achieve various looks. Here’s an overview of
+              different types of eyeliners, their uses, and application tips
 
-
-
+             Mascaras
+Purpose: Darkens, lengthens, and volumizes eyelashes.
+Types: Volumizing, lengthening, and waterproof.
+Application: Applied to upper and lower lashes with a wand.
+7. Eyeshadows
+Purpose: Adds color and dimension to the eyelids.
+Types: Powder, cream, pencil, and liquid.
+Application: Applied to eyelids with brushes or applicators.
+8. Lipsticks
+Purpose: Adds color and texture to the lips.
+Types: Matte, glossy, satin, and liquid.
+Application: Applied directly from the bullet or with a brush.
+9. Lip Glosses
+Purpose: Provides shine and a hint of color to the lips.
+Types: Clear, tinted, and glitter.
+Application: Applied directly to the lips.
+10. Highlighters
+Purpose: Adds a luminous glow to specific areas of the face.
+Types: Powder, cream, liquid, and stick.
+Application: Applied to high points of the face like cheekbones and brow bones.
+11. Contour Products
+Purpose: Defines and shapes the face by creating shadows and highlights.
+Types: Powder, cream, and stick.
+Application: Applied to areas of the face where shadows naturally occur (like under cheekbones).
+12. Setting Sprays
+Purpose: Locks makeup in place and controls shine.
+Types: Hydrating, mattifying, and long-lasting.
+Application: Sprayed over the face after makeup application.
+13. Makeup Removers
+Purpose: Removes makeup and cleanses the skin.
+Types: Cleansing wipes, micellar water, and oil-based removers.
+Application: Applied with cotton pads or directly to the skin.
+        
+        </p>
+        <p class=para style="color: black;"> @copyright 2024</p>
+    </div>
+ 
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="script/script.js"></script>
 </body>
 </html>
